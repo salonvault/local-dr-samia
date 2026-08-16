@@ -1,10 +1,12 @@
 import Image from "next/image";
-import { ArrowUpRight, Star } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import ScrollZoom from "./ScrollZoom";
 
 const avatars = [
-  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&crop=faces&w=80&h=80&q=80",
-  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&crop=faces&w=80&h=80&q=80",
-  "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&crop=faces&w=80&h=80&q=80",
+"/assets/new/person1.jpeg",
+"/assets/new/person2.jpeg",
+"/assets/new/person3.jpeg",
+"/assets/new/person4.jpeg",
 ];
 
 export default function ExpertiseStripSection() {
@@ -14,16 +16,18 @@ export default function ExpertiseStripSection() {
         <div className="mx-auto max-w-[820px] text-center">
           <h2 className="heading-h2 mx-auto max-w-[720px]">
             <span className="inline-block rounded-[7px] bg-[var(--color-primary-1)] px-2 text-white">
-              Expert Care 
+              Dermatologist-led care
             </span>{" "}
-            OfferingAdvanced Skin & Wellness Rituals.
+            for every stage of your skin.
           </h2>
           <p className="para-p3 mx-auto mt-4 max-w-[520px]">
-            Indulge in luminous beauty treatments designed to rejuvenate your skin, relax your body, and enhance your natural glow.
+            From acne and melasma to hair loss, laser, and aesthetic concerns, every plan begins with a focused consultation at our Garden Town clinic.
           </p>
           <a
-            href="#book"
-            className="mt-4 inline-flex min-h-10 items-center justify-center gap-2 rounded-full bg-[var(--color-primary-1)] py-1 pl-5 pr-1 text-[12px] font-bold text-white shadow-[0_14px_30px_rgba(169,104,50,0.18)] transition hover:bg-[var(--color-primary-2)]"
+            href="https://wa.me/923392006332"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex min-h-10 items-center justify-center gap-2 rounded-full bg-[var(--color-primary-1)] py-1 pl-5 pr-1 text-[12px] font-bold text-white shadow-[0_14px_30px_rgba(223,89,107,0.18)] transition hover:bg-[var(--color-primary-2)]"
           >
             Book Appointment
             <span className="grid h-8 w-8 place-items-center rounded-full bg-white text-[var(--color-primary-1)]">
@@ -32,52 +36,60 @@ export default function ExpertiseStripSection() {
           </a>
         </div>
 
-        <div className="relative mx-auto mt-6 max-w-[1040px] overflow-hidden rounded-[18px] border border-[rgba(169,104,50,0.26)] bg-white p-2 shadow-[0_24px_70px_rgba(107,73,50,0.12)]">
-          <Image
-            src="/assets/bg.png"
-            alt=""
-            fill
-            sizes="(max-width: 1024px) 100vw, 1040px"
-            className="object-cover"
-          />
+        <div className="relative mx-auto mt-6 max-w-[1040px] overflow-hidden rounded-[18px] border border-[rgba(223,89,107,0.26)] bg-white p-2 shadow-[0_24px_70px_rgba(156,49,70,0.12)]">
+          <ScrollZoom className="absolute inset-0" scale={1.185}>
+            <Image
+              src="/assets/bg-pink-3.png"
+              alt=""
+              fill
+              sizes="(max-width: 1024px) 100vw, 1040px"
+              className="object-cover"
+            />
+          </ScrollZoom>
           <div className="absolute inset-0 bg-white/10" />
 
           <div className="relative z-10 grid gap-2 lg:grid-cols-4 lg:grid-rows-2">
           <div className="relative min-h-[320px] overflow-hidden rounded-[14px] lg:col-span-1 lg:row-span-2 lg:min-h-[500px]">
-            <Image
-              src="/assets/treatment4.jpeg"
-              alt="Warm skincare texture and treatment detail"
-              fill
-              sizes="(max-width: 1024px) 100vw, 380px"
-              className="object-cover"
-            />
+            <ScrollZoom className="absolute inset-0" scale={1.19}>
+              <Image
+                src="/assets/new/treatment3.jpeg"
+                alt="Clinical skin treatment at Dr Samia Skin Clinic"
+                fill
+                sizes="(max-width: 1024px) 100vw, 380px"
+                className="object-cover"
+              />
+            </ScrollZoom>
             <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_58%,rgba(48,37,31,0.16)_100%)]" />
           </div>
 
           <div className="relative flex min-h-[220px] items-center justify-center overflow-hidden rounded-[14px] bg-[#201915] p-5 text-white lg:col-span-2 lg:row-span-1">
-            <Image
-              src="/assets/treatment2.jpeg"
-              alt="Aurelia skincare products and treatment setting"
-              fill
-              sizes="(max-width: 1024px) 100vw, 520px"
-              className="object-cover "
-            />
+            <ScrollZoom className="absolute inset-0" scale={1.12}>
+              <Image
+                src="/assets/new/treatment_2.jpeg"
+                alt="Treatment setting at Dr Samia Skin Clinic"
+                fill
+                sizes="(max-width: 1024px) 100vw, 520px"
+                className="object-cover"
+              />
+            </ScrollZoom>
           
           </div>
 
           <div className="relative min-h-[220px] overflow-hidden rounded-[14px] bg-white p-6 lg:col-span-1 lg:row-span-1">
-            <Image
-              src="/assets/treatment.jpeg"
-              alt="Aurelia trusted wellness expert treatment"
-              fill
-              sizes="(max-width: 1024px) 100vw, 260px"
-              className="object-cover"
-            />
+            <ScrollZoom className="absolute inset-0" scale={1.16}>
+              <Image
+                src="/assets/new/treatment.jpeg"
+                alt="Dermatologist-guided aesthetic treatment"
+                fill
+                sizes="(max-width: 1024px) 100vw, 260px"
+                className="object-cover"
+              />
+            </ScrollZoom>
           </div>
 
           <div className="min-h-[220px] bg-white/50 backdrop-blur-lg  rounded-[14px] p-7 lg:col-span-1 lg:row-span-1">
-            <p className="font-heading text-[clamp(46px,5vw,72px)] leading-none text-[var(--color-foreground)]">100%</p>
-            <p className="para-p3 mt-2">Clients Satisfaction</p>
+            <p className="font-heading text-[clamp(46px,5vw,72px)] leading-none text-[var(--color-black)]">1:1</p>
+            <p className="para-p3 mt-2">Focused consultations<br/>Individual care plans</p>
             <div className="mt-12 inline-flex items-center gap-3 rounded-full bg-[#111] px-3 py-2 text-white">
               <div className="flex -space-x-2">
                 {avatars.map((avatar) => (
@@ -86,21 +98,23 @@ export default function ExpertiseStripSection() {
                   </span>
                 ))}
               </div>
-              <span className="flex items-center gap-1 text-[12px] font-bold">
-                4.9 <Star className="h-3.5 w-3.5 fill-[#d79a55] text-[#d79a55]" />
+              <span className="flex items-center gap-1 text-[11px] font-bold">
+                Garden Town, Gujranwala
               </span>
             </div>
           </div>
 
           <div className="relative min-h-[220px] overflow-hidden rounded-[14px] lg:col-span-2 lg:row-span-1">
-            <Image
-              src="/assets/hero.png"
-              alt="Relaxing Aurelia facial massage ritual"
-              fill
-              sizes="(max-width: 1024px) 100vw, 560px"
-              className="object-cover"
-              style={{ objectPosition: "62% 52%" }}
-            />
+            <ScrollZoom className="absolute inset-0" scale={1.23}>
+              <Image
+                src="/assets/new/treatment4.jpeg"
+                alt="Personalised facial treatment at Dr Samia Skin Clinic"
+                fill
+                sizes="(max-width: 1024px) 100vw, 560px"
+                className="object-cover"
+                style={{ objectPosition: "62% 52%" }}
+              />
+            </ScrollZoom>
             <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_52%,rgba(48,37,31,0.14)_100%)]" />
           </div>
           </div>

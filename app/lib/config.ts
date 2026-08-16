@@ -1,37 +1,36 @@
 import type { Metadata } from "next";
 
-export const BASE_URL = "https://aurelia-beauty-wellness.vercel.app";
+export const BASE_URL = "https://dr-samia-clinic.vercel.app";
 
-const title = "AURELIA Beauty & Wellness | Modern Beauty Studio";
+const title = "Dr Samia Skin Clinic | Skin & Aesthetic Care in Gujranwala";
 const description =
-  "AURELIA Beauty & Wellness offers thoughtful skin, beauty, and wellness rituals designed to help you look refreshed and feel cared for.";
-const ogImage = "/assets/aurelia-hero.png";
+  "Visit Dr Samia Skin Clinic in Garden Town Phase 3, Gujranwala for consultation-led skin and aesthetic care, including acne, melasma, PRP, HydraFacial, laser, microneedling, mole removal, Botox, and skin rejuvenation treatments.";
+const ogImage = "/assets/og-image.png";
 
 export const seoMetadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
     default: title,
-    template: "%s | AURELIA Beauty & Wellness",
+    template: "%s | Dr Samia Skin Clinic",
   },
   description,
-  applicationName: "AURELIA Beauty & Wellness",
+  applicationName: "Dr Samia Skin Clinic",
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
-  category: "Beauty & Wellness Studio",
+  category: "Dermatology Clinic",
   keywords: [
-    "AURELIA Beauty & Wellness",
-    "modern beauty studio",
-    "signature facial",
-    "deep cleansing facial",
-    "hydration treatment",
-    "glow therapy",
-    "brow sculpting",
-    "lash lift",
-    "relaxation ritual",
+    "Dr Samia Skin Clinic",
+    "dermatologist Gujranwala",
+    "skin clinic Gujranwala",
+    "acne treatment Gujranwala",
+    "melasma treatment Gujranwala",
+    "laser hair removal Gujranwala",
+    "PRP hair treatment Gujranwala",
+    "aesthetic clinic Gujranwala",
   ],
-  authors: [{ name: "AURELIA Beauty & Wellness" }],
-  creator: "AURELIA Beauty & Wellness",
-  publisher: "AURELIA Beauty & Wellness",
+  authors: [{ name: "Dr Samia Skin Clinic" }],
+  creator: "Dr Samia Skin Clinic",
+  publisher: "Dr Samia Skin Clinic",
   alternates: {
     canonical: BASE_URL,
   },
@@ -55,9 +54,9 @@ export const seoMetadata: Metadata = {
     : {}),
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_PK",
     url: BASE_URL,
-    siteName: "AURELIA Beauty & Wellness",
+    siteName: "Dr Samia Skin Clinic",
     title,
     description,
     images: [
@@ -65,7 +64,7 @@ export const seoMetadata: Metadata = {
         url: ogImage,
         width: 1536,
         height: 1024,
-        alt: "AURELIA Beauty & Wellness warm facial treatment studio",
+        alt: "Dr Samia Skin Clinic in Garden Town, Gujranwala",
       },
     ],
   },

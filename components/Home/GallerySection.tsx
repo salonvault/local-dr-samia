@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { Clock3, HeartHandshake, Leaf, ShieldCheck } from "lucide-react";
 import Reveal from "./Reveal";
-import heroBackground from "../../public/assets/bg.png";
 
 const details = [
-  { icon: Leaf, title: "Natural-looking beauty", text: "Treatments are chosen to enhance your features, not mask them." },
-  { icon: HeartHandshake, title: "Personalized care", text: "We begin with your skin, comfort, routine, and the result you want to feel." },
-  { icon: ShieldCheck, title: "Clean aesthetics", text: "A quiet studio environment with thoughtful products and calm pacing." },
-  { icon: Clock3, title: "Time for yourself", text: "Appointments are held with enough room to settle in and never feel rushed." },
+  { icon: Leaf, title: "Evidence-based choices", text: "Recommendations are guided by your diagnosis, skin type, and realistic treatment goals." },
+  { icon: HeartHandshake, title: "Care built around you", text: "We listen to your concerns, daily routine, medical history, and comfort before planning care." },
+  { icon: ShieldCheck, title: "Clinical hygiene", text: "A clean, professional setting with careful protocols for every consultation and procedure." },
+  { icon: Clock3, title: "Convenient Gujranwala care", text: "Skin and aesthetic care close to home in Garden Town Phase 3, with clear follow-up guidance." },
 ];
 
 export default function GallerySection() {
@@ -18,10 +17,10 @@ export default function GallerySection() {
 
       <div className="container relative z-10">
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-          <div className="relative min-h-[520px] overflow-hidden rounded-[8px] border border-[rgba(107,73,50,0.14)] bg-white shadow-[var(--shadow-lift)]">
+          <div className="relative min-h-[520px] overflow-hidden rounded-[8px] border border-[rgba(156,49,70,0.14)] bg-white shadow-[var(--shadow-lift)]">
             <Image
-              src="/assets/full.jpeg"
-              alt="Warm, calm AURELIA treatment studio"
+              src="/assets/new/laser.jpeg"
+              alt="Welcoming treatment space at Dr Samia Skin Clinic"
               fill
               sizes="(min-width: 1024px) 52vw, 100vw"
               className="object-cover"
@@ -29,7 +28,7 @@ export default function GallerySection() {
             />
 
             <div className="absolute bottom-6 left-6 right-6 grid gap-2 sm:grid-cols-3">
-              {["Skin", "Beauty", "Wellness"].map((label) => (
+              {["Skin Health", "Aesthetics", "Confidence"].map((label) => (
                 <span key={label} className="rounded-[7px] border border-white/54 bg-white/78 px-4 py-3 text-center font-heading text-[24px] font-semibold text-[var(--color-primary-1)] backdrop-blur">
                   {label}
                 </span>
@@ -38,25 +37,25 @@ export default function GallerySection() {
           </div>
 
           <div>
-            <p className="eyebrow">The Aurelia feeling</p>
+            <p className="eyebrow">Your neighbourhood skin clinic</p>
             <Reveal>
               <h2 className="mt-4 max-w-[600px] font-heading text-[clamp(42px,5vw,78px)] font-semibold leading-[0.96]">
-                A little time for you. A lot {" "}
+                Specialist care, {" "}
                 <span className="inline-block rounded-[7px] bg-[var(--color-primary-1)] px-2 text-white">
-                  more confidence.
+                  close to home.
                 </span>
               </h2>
             </Reveal>
             <p className="mt-6 max-w-[560px] text-[15px] leading-[1.85] text-[var(--color-ink-2)]">
-              Aurelia is not a quick beauty parlour. It is a modern beauty and wellness studio for clients who value healthy skin, natural detail, clean interiors, and premium care that still feels warm.
+              Dr Samia Skin Clinic brings consultation-led skin, hair, laser, and aesthetic care to Garden Town, Gujranwala. We focus on careful assessment, understandable advice, and treatment plans shaped around your concerns and everyday routine.
             </p>
 
             <div className="mt-9 grid gap-3">
               {details.map((detail) => {
                 const Icon = detail.icon;
                 return (
-                  <article key={detail.title} className="grid grid-cols-[44px_1fr] gap-4 rounded-[8px] border border-[rgba(107,73,50,0.14)] bg-white/64 p-4 shadow-[var(--shadow-card)]">
-                    <span className="grid h-11 w-11 place-items-center rounded-full bg-[rgba(169,104,50,0.1)] text-[var(--color-primary-1)]">
+                  <article key={detail.title} className="grid grid-cols-[44px_1fr] gap-4 rounded-[8px] border border-[rgba(156,49,70,0.14)] bg-white/64 p-4 shadow-[var(--shadow-card)]">
+                    <span className="grid h-11 w-11 place-items-center rounded-full bg-[rgba(223,89,107,0.1)] text-[var(--color-primary-1)]">
                       <Icon className="h-5 w-5" />
                     </span>
                     <div>

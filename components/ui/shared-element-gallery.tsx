@@ -86,7 +86,7 @@ export function GalleryImage({
       <motion.img
         layoutId={`image-${id}`}
         src={src}
-        alt={alt || "AURELIA Beauty & Wellness gallery image"}
+              alt={alt || "Dr Samia Skin Clinic gallery image"}
         className="h-auto w-full rounded-[8px] object-cover"
         variants={{
           hover: { scale: 0.985 },
@@ -142,7 +142,7 @@ function GalleryModal() {
             <motion.img
               layoutId={`image-${selectedImage.id}`}
               src={selectedImage.src}
-              alt={selectedImage.alt || "Selected AURELIA Beauty & Wellness gallery image"}
+                  alt={selectedImage.alt || "Selected Dr Samia Skin Clinic gallery image"}
               className="h-auto max-h-[88vh] w-auto max-w-[94vw] rounded-[8px] bg-[linear-gradient(135deg,#f5edec_0%,#fffaf7_48%,#e7d5d1_100%)] object-contain shadow-2xl"
               draggable={false}
               transition={spring}
