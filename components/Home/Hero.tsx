@@ -59,7 +59,7 @@ export default function Hero() {
         </div>
 
 
-        <div className="relative z-100 flex min-h-[calc(100vh-4px)] flex-col px-5 pb-6 pt-24 sm:px-7 md:px-12 md:pt-28 lg:grid lg:grid-rows-[auto_1fr_auto] lg:px-16 lg:pb-9 lg:pt-36">
+        <div className="relative z-3 flex min-h-[calc(100vh-4px)] flex-col px-5 pb-6 pt-24 sm:px-7 md:px-12 md:pt-28 lg:grid lg:grid-rows-[auto_1fr_auto] lg:px-16 lg:pb-9 lg:pt-36">
           <div className="max-w-[690px]">
             <p className="hero-kicker">
               <BadgeCheck className="h-3.5 w-3.5" />
@@ -108,7 +108,7 @@ export default function Hero() {
             </ScrollZoom>
           </div>
 
-          <div className="relative z-10 mt-[-46px] flex items-center gap-3 rounded-[14px] border border-white/16 bg-[#8a1746]/64 p-4 shadow-[0_22px_54px_rgba(61,5,28,0.24)] backdrop-blur-xl md:max-w-[520px] lg:hidden">
+          <div className="relative z-2 mt-[-46px] flex items-center gap-3 rounded-[14px] border border-white/16 bg-[#8a1746]/64 p-4 shadow-[0_22px_54px_rgba(61,5,28,0.24)] backdrop-blur-xl md:max-w-[520px] lg:hidden">
             <MiniImage />
             <div>
               <p className="offer-title text-white">Consult First</p>

@@ -11,7 +11,7 @@ export default function WhatsAppFloat() {
     >
       <span className="whatsapp-wave" />
       <span className="whatsapp-wave whatsapp-wave-delay" />
-      <FaWhatsapp className="relative z-10 h-6 w-6 text-white md:h-7 md:w-7" />
+      <FaWhatsapp className="relative z-100! h-6 w-6 text-white md:h-7 md:w-7" />
     </a>
   );
 }
